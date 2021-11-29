@@ -10,8 +10,12 @@ public class MySQLDataBase {
 
     private static final List<Product> products = new ArrayList<>();
     private static final List<User> users = new ArrayList<>();
+    private static String logged;
 
     static {
+        User admin = new User(1L, "Ewerton", "Silva", null, "ewerton@admin.com", "123", null);
+        users.add(admin);
+
         Product product1 = new Product(1L, "Arroz", 20.00, 50L);
         Product product2 = new Product(2L, "Feijão", 10.00, 100L);
         Product product3 = new Product(3L, "Macarrão", 07.00, 30L);
@@ -47,5 +51,11 @@ public class MySQLDataBase {
     public static List<User> getUsers() {
         return users;
     }
+
+    public static void loggedUser(String type) { logged = type; }
+
+    public static String getLoggedUser() { return logged; }
+
+
 
 }

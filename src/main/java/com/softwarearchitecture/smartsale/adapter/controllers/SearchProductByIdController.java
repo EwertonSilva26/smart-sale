@@ -17,13 +17,12 @@ public class SearchProductByIdController {
     private SearchProductByIdUseCaseInterface useCase;
 
     @GetMapping(value = "/{id}")
-    public ResponseEntity<Product> getProductById(@PathVariable("id") Long id) {
+    public ResponseEntity<Product> getProductById(@PathVariable("id") Long id) throws Exception {
         Optional<Product> product = Optional.ofNullable(useCase.getProductById(id));
 
-        if (!product.isPresent()) {
-            return ResponseEntity.badRequest().body(product.get());
-        }
+        return product.map(ResponseEntity::ok).orElseGet(() -> ResponseEntity
+                .badRequest()
+                .body(product.get()));
 
-        return ResponseEntity.ok(product.get());
     }
 }

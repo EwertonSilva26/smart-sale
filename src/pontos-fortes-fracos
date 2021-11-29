@@ -1,0 +1,12 @@
+
+Pontos fortes do produto  
+
+Testatibilidade - Como cada classe é independente e cada classe possui um unico metodo a testabilidade fica muito mais facil
+
+Independência do banco de dados - A aplicação não depende de um unico banco de dados. O banco pode ser alterado facilmente sem interrir no funcionamento da aplicação.
+
+
+
+Pontos fracos do produto  
+
+Por conta de ter muitas classes no produto o intendimento do funcionamento do produto fica um pouco complexo
