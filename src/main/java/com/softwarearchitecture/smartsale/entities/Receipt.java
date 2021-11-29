@@ -1,17 +1,15 @@
-package com.softwarearchitecture.smartsale.entity;
+package com.softwarearchitecture.smartsale.entities;
 
-import java.math.BigDecimal;
-import java.util.Date;
 import java.util.List;
 
-public class Comprovante {
+public class Receipt {
 
     private List<Product> products;
     private Long totalItem;
     private double totalValue;
     private String saleDate;
 
-    public Comprovante(List<Product> products, Long totalItem, double totalValue, String saleDate) {
+    public Receipt(List<Product> products, Long totalItem, double totalValue, String saleDate) {
         this.products = products;
         this.totalItem = totalItem;
         this.totalValue = totalValue;

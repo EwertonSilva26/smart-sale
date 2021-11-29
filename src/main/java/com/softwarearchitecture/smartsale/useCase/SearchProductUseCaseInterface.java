@@ -1,6 +1,6 @@
 package com.softwarearchitecture.smartsale.useCase;
 
-import com.softwarearchitecture.smartsale.entity.Product;
+import com.softwarearchitecture.smartsale.entities.Product;
 
 import java.util.List;
 

@@ -1,8 +1,8 @@
-package com.softwarearchitecture.smartsale.entity;
+package com.softwarearchitecture.smartsale.entities;
 
-import java.math.BigDecimal;
+import java.io.Serializable;
 
-public class Product {
+public class Product implements Serializable {
 
     private Long code;
     private String name;

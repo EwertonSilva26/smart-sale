@@ -1,6 +1,6 @@
 package com.softwarearchitecture.smartsale.adapter.controllers;
 
-import com.softwarearchitecture.smartsale.entity.Product;
+import com.softwarearchitecture.smartsale.entities.Product;
 import com.softwarearchitecture.smartsale.useCase.SearchProductUseCaseInterface;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -22,7 +22,6 @@ public class SearchProductController {
         Optional<List<Product>> products = Optional.ofNullable(useCase.getProducts());
 
         if (!products.isPresent()) {
-//            log.info("Empresa não encontrada para o CNPJ: {}", cnpj);
             return ResponseEntity.badRequest().body(products.get());
         }
 

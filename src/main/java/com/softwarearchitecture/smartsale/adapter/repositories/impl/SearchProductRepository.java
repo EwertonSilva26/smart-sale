@@ -1,8 +1,8 @@
-package com.softwarearchitecture.smartsale.adapter.repositories;
+package com.softwarearchitecture.smartsale.adapter.repositories.impl;
 
-import com.softwarearchitecture.smartsale.adapter.SearchProductRepositoryInterface;
-import com.softwarearchitecture.smartsale.entity.Product;
-import com.softwarearchitecture.smartsale.db.DataBase;
+import com.softwarearchitecture.smartsale.adapter.repositories.SearchProductRepositoryInterface;
+import com.softwarearchitecture.smartsale.entities.Product;
+import com.softwarearchitecture.smartsale.utils.MySQLDataBase;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -12,7 +12,7 @@ public class SearchProductRepository implements SearchProductRepositoryInterface
 
     @Override
     public List<Product> getProducts() {
-        return DataBase.getAll();
+        return MySQLDataBase.getAll();
     }
 
 //    @Override

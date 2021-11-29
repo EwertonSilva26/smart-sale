@@ -1,7 +1,7 @@
 package com.softwarearchitecture.smartsale.useCase.services;
 
-import com.softwarearchitecture.smartsale.adapter.SearchProductByIdRepositoryInterface;
-import com.softwarearchitecture.smartsale.entity.Product;
+import com.softwarearchitecture.smartsale.adapter.repositories.SearchProductByIdRepositoryInterface;
+import com.softwarearchitecture.smartsale.entities.Product;
 import com.softwarearchitecture.smartsale.useCase.SearchProductByIdUseCaseInterface;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

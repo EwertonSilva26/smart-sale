@@ -2,8 +2,8 @@ package com.softwarearchitecture.smartsale.useCase;
 
 import com.softwarearchitecture.smartsale.entities.Product;
 
-public interface SearchProductByIdUseCaseInterface {
+public interface UpdateProductUseCaseInterface {
 
-    Product getProductById(Long id);
+    Product updateProduct(Product product, Long id);
 
 }
