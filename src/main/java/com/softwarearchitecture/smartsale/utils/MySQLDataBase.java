@@ -1,7 +1,7 @@
 package com.softwarearchitecture.smartsale.utils;
 
 import com.softwarearchitecture.smartsale.entities.Product;
-import com.softwarearchitecture.smartsale.entities.User;
+import com.softwarearchitecture.smartsale.entities.Person;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,11 +9,11 @@ import java.util.List;
 public class MySQLDataBase {
 
     private static final List<Product> products = new ArrayList<>();
-    private static final List<User> users = new ArrayList<>();
+    private static final List<Person> users = new ArrayList<>();
     private static String logged;
 
     static {
-        User admin = new User(1L, "Ewerton", "Silva", null, "ewerton@admin.com", "123", null);
+        Person admin = new Person(1L, "Ewerton", "Silva", null, "ewerton@admin.com", "123");
         users.add(admin);
 
         Product product1 = new Product(1L, "Arroz", 20.00, 50L);
@@ -46,9 +46,9 @@ public class MySQLDataBase {
         return products;
     }
 
-    public static void setUser(User user) { users.add(user);}
+    public static void setUser(Person user) { users.add(user);}
 
-    public static List<User> getUsers() {
+    public static List<Person> getUsers() {
         return users;
     }
 

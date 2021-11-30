@@ -13,7 +13,8 @@ public class LoginUsertUseCase implements LoginUserUseCaseInterface {
     public LoginUserRepositoryInterface repository;
 
     @Override
-    public User loginProduct(User user) throws Exception {
+    public User loginUser(User user) throws Exception {
         return repository.LoginUser(user);
     }
+
 }

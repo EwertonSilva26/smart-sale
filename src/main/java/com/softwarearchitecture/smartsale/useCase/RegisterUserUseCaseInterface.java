@@ -1,9 +1,9 @@
 package com.softwarearchitecture.smartsale.useCase;
 
-import com.softwarearchitecture.smartsale.entities.User;
+import com.softwarearchitecture.smartsale.entities.Person;
 
 public interface RegisterUserUseCaseInterface {
 
-    User registerUser(User user);
+    Person registerUser(Person user);
 
 }

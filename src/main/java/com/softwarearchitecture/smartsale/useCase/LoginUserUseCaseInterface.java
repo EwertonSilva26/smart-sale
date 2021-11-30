@@ -1,9 +1,10 @@
 package com.softwarearchitecture.smartsale.useCase;
 
+import com.softwarearchitecture.smartsale.entities.Person;
 import com.softwarearchitecture.smartsale.entities.User;
 
 public interface LoginUserUseCaseInterface {
 
-    User loginProduct(User user) throws Exception;
+    User loginUser(User user) throws Exception;
 
 }

@@ -1,9 +1,9 @@
 package com.softwarearchitecture.smartsale.adapter.repositories;
 
-import com.softwarearchitecture.smartsale.entities.User;
+import com.softwarearchitecture.smartsale.entities.Person;
 
 public interface RegisterUserRepositoryInterface {
 
-    User registerUser(User user);
+    Person registerUser(Person user);
 
 }
