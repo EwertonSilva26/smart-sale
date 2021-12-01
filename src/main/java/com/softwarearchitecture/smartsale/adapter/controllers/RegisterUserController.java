@@ -18,11 +18,11 @@ public class RegisterUserController {
     private RegisterUserUseCaseInterface useCase;
 
     @PostMapping
-    public ResponseEntity<Person> registerUser(@RequestBody Person user) throws Exception {
+    public ResponseEntity<Person> registerUser(@RequestBody Person person) throws Exception {
 
-        VerifyUser.checkRegisterUser(user);
+        VerifyUser.checkRegisterUser(person);
 
-        Optional<Person> newUser = Optional.ofNullable(useCase.registerUser(user));
+        Optional<Person> newUser = Optional.ofNullable(useCase.registerUser(person));
 
         return newUser.map(ResponseEntity::ok).orElseGet(() -> ResponseEntity
                 .badRequest()

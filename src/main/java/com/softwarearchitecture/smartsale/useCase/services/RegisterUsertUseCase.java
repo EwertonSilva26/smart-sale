@@ -13,7 +13,7 @@ public class RegisterUsertUseCase implements RegisterUserUseCaseInterface {
     public RegisterUserRepositoryInterface repository;
 
     @Override
-    public Person registerUser(Person user) {
-        return repository.registerUser(user);
+    public Person registerUser(Person person) {
+        return repository.registerUser(person);
     }
 }
